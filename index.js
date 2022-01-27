@@ -5,11 +5,12 @@ const Employee = require("./lib/Employee");
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
+const { writeFile, copyFile } = require('./utils/generate-site');
 
 class Team {
-  constructor() {
-    this.manager = {};
-  }
+//   constructor() {
+//     this.manager = {};
+//   }
 
   initializeTeamManager() {
     inquirer
@@ -305,18 +306,22 @@ class Team {
   }
 }
 
-module.exports = Team;
-
 new Team().initializeTeamManager()
-//   .then(teamData => {
-//     return generatePage(teamData);
+// .then(portfolioData => {
+//     return generatePage(portfolioData);
 //   })
-//   .then(pageHTML => {
-//     return writeFile(pageHTML);
-//   })
-//   .then(writeFileResponse => {
-//     console.log(writeFileResponse);
-//   })
-//   .catch(err => {
-//     console.log(err);
-//   });
+  .then(pageHTML => {
+    return writeFile(pageHTML);
+  })
+  .then(writeFileResponse => {
+    console.log(writeFileResponse);
+    return copyFile();
+  })
+  .then(copyFileResponse => {
+    console.log(copyFileResponse);
+  })
+  .catch(err => {
+    console.log(err);
+  });
+
+module.exports = Team;
