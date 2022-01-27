@@ -1,21 +1,21 @@
-const Employee = require("../lib/Employee");
-const Manager = require("../lib/Manager");
-const Engineer = require("../lib/Engineer");
-const Intern = require("../lib/Intern");
+// const Employee = require("./lib/Employee");
+// const Manager = require("./lib/Manager");
+// const Engineer = require("./lib/Engineer");
+// const Intern = require("./lib/Intern");
 
-// create the manager
-const generateManager = managerText => {
-    if (!managerText) {
-      return '';
-    }
+// // create the manager
+// const generateManager = managerText => {
+//     if (!managerText) {
+//       return '';
+//     }
   
-    return `
-      <section class="my-3" id="about">
-        <h2 class="text-dark bg-primary p-2 display-inline-block">Manager</h2>
-        <p>${this.manager.getName()}</p>
-      </section>
-    `;
-  };
+//     return `
+//       <section class="my-3" id="about">
+//         <h2 class="text-dark bg-primary p-2 display-inline-block">Manager</h2>
+//         <p>${this.manager.getName()}</p>
+//       </section>
+//     `;
+//   };
   
 //   // create the projects section
 //   const generateProjects = projectsArr => {
