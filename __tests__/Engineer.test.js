@@ -6,5 +6,5 @@ test('creates an Engineer object', () => {
     expect(engineer.name).toEqual('Craig');
     expect(engineer.id).toEqual('14');
     expect(engineer.email).toEqual('craigl@tirf.ca');
-    expect(engineer.gitHub).toEqual('CraigLyon');
+    expect(engineer.github).toEqual('CraigLyon');
 });
