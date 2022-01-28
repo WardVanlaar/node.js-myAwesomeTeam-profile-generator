@@ -24,7 +24,7 @@ Programming languages used:
 Clone this repo, install node.js, then type node index in the terminal.
 
 ## Usage
-This App can be used to create a profile of your team by adding a Manager and/or engineer(s) and intern(s).
+This App can be used to create a profile of your team by adding a Manager and/or engineer(s) and intern(s). Here is a link that demonstrates how to use this App: https://www.loom.com/share/ef923b631db3471aa82711d0fb600402
 
 ## License
 This App is covered under the following license: MIT
